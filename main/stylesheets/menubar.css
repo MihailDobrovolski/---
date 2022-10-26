@@ -1,0 +1,85 @@
+menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+menu div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  /* min-width: 1440px; */
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 50px;
+  padding: 0 40px;
+}
+
+/* не выделенный эллемент без наведения */
+menu a {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* не выделенный эл при наведении */
+menu a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* выделенный элемент без наведения */
+menu a.current {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* эллемент выделенный при наведении  */
+menu a.current:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+menu a:first-child {
+  width: 180px;
+  height: 16px;
+  background-image: url('../img/logo.svg');
+}
+
+@media (max-width: 1440px) {
+  menu div {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1250px) {
+  menu a:first-child {
+    width: 150px;
+    height: 13px;
+    background-size: 150px 14px;
+  }
+  menu a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 1194px) {
+
+  menu a {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  menu a:first-child {
+    width: 150px;
+    height: 14px;
+  }
+}

@@ -1,0 +1,50 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 300px;
+  margin: 50px 0 0 20px;
+  padding: 13px 28px 27px;
+
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+nav:hover {
+  opacity: 1;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 15px;
+  width: 300px;
+  color: rgba(0, 0, 0, 0.8);
+  list-style-type: none;
+}
+
+/* nav > ul > li:first-child {
+    font-weight: bold;
+} */
+
+nav ul ul li {
+  font-size: 14px;
+  line-height: 15px;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1340px) {
+  nav {
+    display: none;
+  }
+}
